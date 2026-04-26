@@ -10,7 +10,7 @@ c = conn.cursor()
 c.execute("CREATE TABLE IF NOT EXISTS users (email TEXT)")
 c.execute("CREATE TABLE IF NOT EXISTS messages (email TEXT, sender TEXT, message TEXT)")
 conn.commit()
-
+# redeploy
 @app.route("/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -64,4 +64,5 @@ def chat():
     """
 
 app.run(host="0.0.0.0", port=5000)
+
 
