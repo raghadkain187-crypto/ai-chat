@@ -1,1 +1,1 @@
-web: cd ai-chat && python main.py
+web: gunicorn main:app
