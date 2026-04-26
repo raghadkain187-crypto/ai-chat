@@ -1,6 +1,6 @@
 from flask import Flask, request
 import sqlite3
-
+# trigger deploy
 app = Flask(__name__)
 
 # إنشاء قاعدة البيانات
@@ -64,3 +64,4 @@ def chat():
     """
 
 app.run(host="0.0.0.0", port=5000)
+
